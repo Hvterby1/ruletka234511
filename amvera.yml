@@ -7,7 +7,7 @@ build:
   requirementsPath: requirements.txt
   useCache: true
 run:
-  scriptName: src/__main__.py
+  scriptName: __main__.py
   command: null
   persistenceMount: /data
   containerPort: "80"
