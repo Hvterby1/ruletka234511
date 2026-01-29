@@ -1,0 +1,8 @@
+venv/
+.git/
+.gitignore
+.env
+README.md
+pyproject.toml
+tests/
+data/

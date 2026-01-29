@@ -1,0 +1,24 @@
+meta:
+  environment: python
+  toolchain:
+    version: "3.11"
+build:
+  requirementsPath: requirements.txt
+run:
+  command: python -m python_starter
+  persistencePath: /app/data
+  envVars:
+    - name: BOT_TOKEN
+      description: "Telegram bot token"
+      required: true
+    - name: OWNER_ID
+      description: "Owner Telegram ID"
+      required: true
+    - name: ADMIN_IDS
+      description: "Admin Telegram IDs (comma separated)"
+      required: false
+      default: ""
+    - name: DB_PATH
+      description: "Database file path"
+      required: false
+      default: "/app/data/studio.sqlite3"
