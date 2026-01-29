@@ -2,12 +2,10 @@ meta:
   environment: python
   toolchain:
     name: pip
-    version: "3.11"
+    version: '3.11'
+
 build:
   requirementsPath: requirements.txt
-  useCache: true
+
 run:
-  command: src/python_starter/__main__.py
-  command: null
-  persistenceMount: /data
-  containerPort: "80"
+  command: python3 -m src.python_starter.__main__
